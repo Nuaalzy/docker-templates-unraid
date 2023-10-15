@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>navidrome</Name>
+  <Repository>deluan/navidrome</Repository>
+  <Registry>https://hub.docker.com/r/deluan/navidrome</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:4533]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/navidrome-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1677983058</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web" Target="4533" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4533</Config>
+  <Config Name="data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/navidrome/data</Config>
+  <Config Name="music" Target="/music" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/music</Config>
+</Container>

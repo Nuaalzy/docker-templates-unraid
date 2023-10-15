@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jackett</Name>
+  <Repository>linuxserver/jackett:latest</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/jackett</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x79CD;&#x5B50;&#x7D22;&#x5F15;&#x5DE5;&#x5177;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9117]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/jacket-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669518102</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web port" Target="9117" Default="9117" Mode="tcp" Description="web&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="false" Mask="false">9117</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/docker/jackett/config" Mode="rw" Description="config&#x6587;&#x4EF6;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/jackett/config</Config>
+  <Config Name="&#x81EA;&#x52A8;&#x66F4;&#x65B0;" Target="AUTO_UPDATE" Default="false" Mode="" Description="&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x9009;&#x9879;" Type="Variable" Display="always-hide" Required="false" Mask="false">false</Config>
+</Container>

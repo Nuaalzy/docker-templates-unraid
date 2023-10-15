@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nastools</Name>
+  <Repository>nastools/nas-tools</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/nas-tools</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>NASTool NAS&#x5A92;&#x4F53;&#x8D44;&#x6E90;&#x5F52;&#x96C6;&#x6574;&#x7406;&#x5DE5;&#x5177;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/nastool-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>0,1,2,3</CPUset>
+  <DateInstalled>1697346021</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web port" Target="3000" Default="3000" Mode="tcp" Description="web&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/docker/nas-tools" Mode="rw" Description="&#x5E94;&#x7528;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5B58;&#x653E;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nas-tools</Config>
+  <Config Name="media" Target="/media" Default="" Mode="rw" Description="&#x5A92;&#x4F53;&#x5B58;&#x653E;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads</Config>
+  <Config Name="&#x6743;&#x9650;" Target="UMASK" Default="000" Mode="" Description="&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#xFF0C;&#x53EF;&#x66F4;&#x6539;&#x4E3A;022" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="&#x81EA;&#x52A8;&#x66F4;&#x65B0;" Target="NASTOOL_AUTO_UPDATE" Default="false" Mode="" Description="&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x9009;&#x9879;&#xFF0C;&#x53EF;&#x9009; true / false" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="PUID" Target="PUID" Default="1000" Mode="" Description="&#x8FD0;&#x884C;&#x7528;&#x6237;" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="&#x8FD0;&#x884C;&#x7528;&#x6237;&#x7EC4;" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>

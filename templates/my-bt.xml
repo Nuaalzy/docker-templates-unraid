@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bt</Name>
+  <Repository>superng6/qbittorrentee:latest</Repository>
+  <Registry>https://hub.docker.com/r/superng6/qbittorrentee</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview> qBittorrent&#x589E;&#x5F3A;&#x7248;&#xFF0C;&#x9632;&#x5438;&#x8840; </Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8090]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/qbittorrent-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1677983709</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEBUIPORT" Target="WEBUIPORT" Default="8080" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="TCP" Target="6881" Default="6881" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="UDP" Target="6881" Default="6881" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="web" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8090</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/docker/bt/config" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/bt/config</Config>
+  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/W3P314JX/bt/</Config>
+</Container>

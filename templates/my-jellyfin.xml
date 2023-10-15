@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jellyfin</Name>
+  <Repository>nyanmisaka/jellyfin:latest</Repository>
+  <Registry>https://hub.docker.com/r/nyanmisaka/jellyfin</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>nyanmisaka's Jellyfin</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8096]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jellyfin-icon.png</Icon>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683825463</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/docker/jellyfin/config" Mode="rw" Description="&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/jellyfin/config</Config>
+  <Config Name="cache" Target="/cache" Default="/mnt/user/appdata/docker/jellyfin/cache" Mode="rw" Description="&#x7F13;&#x5B58;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/jellyfin/cache</Config>
+  <Config Name="media" Target="/media" Default="" Mode="rw" Description="&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads</Config>
+  <Config Name="web port" Target="8096" Default="8096" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8097</Config>
+  <Config Name="Service Discovery: 1900" Target="1900" Default="1900" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">1903</Config>
+  <Config Name="Client Discovery: 7359 UDP" Target="7359" Default="7359" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">7359</Config>
+  <Config Name="proxy" Target="ALL_PROXY" Default="http://192.168.1.2:20172" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.2:20172</Config>
+  <Config Name="dri" Target="" Default="" Mode="" Description="" Type="Device" Display="advanced" Required="false" Mask="false">/dev/dri/</Config>
+</Container>

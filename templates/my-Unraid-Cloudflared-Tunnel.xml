@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Unraid-Cloudflared-Tunnel</Name>
+  <Repository>cloudflare/cloudflared:latest</Repository>
+  <Registry>https://hub.docker.com/r/figro/unraid-cloudflared-tunnel</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/129752-figros-unraid-cloudflared-tunnel-support-thread/</Support>
+  <Project>https://github.com/AriaGomes/Unraid-Cloudflared-Tunnel</Project>
+  <Overview>Simple cloudflared docker container for Unraid. Simply add your token from cloudflare dashboard as a variable and your done.&#xD;
+&#xD;
+Cloudflared Docs: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/&#xD;
+&#xD;
+https://hub.docker.com/r/cloudflare/cloudflared&#xD;
+&#xD;
+https://github.com/cloudflare/cloudflared&#xD;
+&#xD;
+ &#xD;
+&#xD;
+Github: https://github.com/AriaGomes/Unraid-Cloudflared-Tunnel&#xD;
+DockerHub: https://hub.docker.com/r/figro/unraid-cloudflared-tunnel&#xD;
+&#xD;
+Discord: Figro#4064</Overview>
+  <Category>Cloud: Tools:Utilities Network:Proxy</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/master/Unraid-Cloudflared-Tunnel/unraid-cloudflared-tunnel.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/fc45e49d77f4e8546b78b50a636f236cfa30b5b5/Images/unraid-cloudflared-tunnel.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1690073350</DateInstalled>
+  <DonateText>Buy me a coffee :)</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
+  <Requires/>
+  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false">eyJhIjoiNGI0M2E1YzFmMTA5YTQ0YzU2ODkyN2YyODRjYzk2MDQiLCJ0IjoiZGY0MmJjZGQtMTlhNS00M2ZlLWE5NWUtOWU4YzkwMzdmNTUxIiwicyI6Ik1tUmlPRFEwTWpndE1ESXlZaTAwTVdZM0xUZ3pZV1l0WTJNd01UUTBObVZqTmpFMCJ9</Config>
+</Container>

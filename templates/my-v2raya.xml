@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>v2raya</Name>
+  <Repository>mzz2017/v2raya</Repository>
+  <Registry>https://registry.hub.docker.com/r/mzz2017/v2raya</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>v2rayA &#x662F;&#x4E00;&#x4E2A;&#x6613;&#x7528;&#x800C;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E13;&#x6CE8;&#x4E8E; Linux &#x7684; V2Ray &#x5BA2;&#x6237;&#x7AEF;</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:2017]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/mingzaily/unraid-templates/master/v2rayA/v2rayA.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/v2raya.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1697348335</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/lib/modules" Default="" Mode="ro" Description="&#x5BB9;&#x5668; Path: /lib/modules:ro" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2raya/modules</Config>
+  <Config Name="Host Path 2" Target="/etc/resolv.conf" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/resolv.conf" Type="Path" Display="always" Required="false" Mask="false">/etc/resolv.conf</Config>
+  <Config Name="Host Path 3" Target="/etc/v2raya" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/v2raya" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2raya</Config>
+  <Config Name="web" Target="2017" Default="2017" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2017</Config>
+  <Config Name="SOCKS5" Target="20170" Default="20170" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">20170</Config>
+  <Config Name="HTTP" Target="20171" Default="20171" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">20171</Config>
+  <Config Name="SOCKS5(with Rule)" Target="20169" Default="20169" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">20169</Config>
+  <Config Name="HTTP(with Rule)" Target="20172" Default="20172" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">20172</Config>
+  <Config Name="VMess(with Rule)" Target="20173" Default="20173" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">20173</Config>
+</Container>

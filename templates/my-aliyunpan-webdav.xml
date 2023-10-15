@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aliyunpan-webdav</Name>
+  <Repository>tickstep/aliyunpan-webdav:v0.2.3</Repository>
+  <Registry>https://hub.docker.com/r/tickstep/aliyunpan-webdav</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x672C;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x8BA9;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x53D8;&#x8EAB;&#x4E3A;webdav&#x534F;&#x8BAE;&#x7684;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8FD9;&#x6837;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x6302;&#x8F7D;&#x4E3A;Windows&#x3001;Linux&#x3001;Mac&#x7CFB;&#x7EDF;&#x7684;&#x78C1;&#x76D8;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;NAS&#x7CFB;&#x7EDF;&#x505A;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x6216;&#x6587;&#x4EF6;&#x540C;&#x6B65;&#x7B49;&#x7B49;&#x3002;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:23077]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669550616</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="refresh_token" Target="ALIYUNPAN_REFRESH_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">d0d8da36bf8546cb9da04a33227f8e1c</Config>
+  <Config Name="ALIYUNPAN_AUTH_USER" Target="ALIYUNPAN_AUTH_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="ALIYUNPAN_AUTH_PASSWORD" Target="ALIYUNPAN_AUTH_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">82510389</Config>
+  <Config Name="ALIYUNPAN_WEBDAV_MODE" Target="ALIYUNPAN_WEBDAV_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">rw</Config>
+  <Config Name="ALIYUNPAN_PAN_DRIVE" Target="ALIYUNPAN_PAN_DRIVE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">File</Config>
+  <Config Name="ALIYUNPAN_PAN_DIR" Target="ALIYUNPAN_PAN_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/unraid</Config>
+  <Config Name="port" Target="23077" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">23077</Config>
+  <Config Name="&#x4E0B;&#x8F7D;&#x8DEF;&#x5F84;" Target="/root/Downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/aliyun</Config>
+</Container>

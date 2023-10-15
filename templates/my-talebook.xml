@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>talebook</Name>
+  <Repository>talebook/talebook</Repository>
+  <Registry>https://hub.docker.com/r/talebook/talebook</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Calibre&#x7684;&#x7B80;&#x5355;&#x7684;&#x56FE;&#x4E66;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x652F;&#x6301;&#x5728;&#x7EBF;&#x9605;&#x8BFB;&#x3002;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7000]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669543856</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web port" Target="80" Default="" Mode="tcp" Description="web&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="false">7000</Config>
+  <Config Name="Host Path 1" Target="/data" Default="/mnt/user/appdata/docker/talebook/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/docker/talebook/data</Config>
+</Container>

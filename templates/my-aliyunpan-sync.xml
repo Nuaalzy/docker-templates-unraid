@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aliyunpan-sync</Name>
+  <Repository>tickstep/aliyunpan-sync:v0.2.7</Repository>
+  <Registry>https://hub.docker.com/r/tickstep/aliyunpan-sync</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x963F;&#x91CC;&#x4E91;&#x76D8;&#x540C;&#x6B65;&#x5907;&#x4EFD;&#x529F;&#x80FD;&#xFF0C;&#x652F;&#x6301;&#x5907;&#x4EFD;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x5230;&#x4E91;&#x76D8;&#xFF0C;&#x5907;&#x4EFD;&#x4E91;&#x76D8;&#x6587;&#x4EF6;&#x5230;&#x672C;&#x5730;&#xFF0C;&#x53CC;&#x5411;&#x540C;&#x6B65;&#x5907;&#x4EFD;&#x4E09;&#x79CD;&#x6A21;&#x5F0F;&#x3002;&#x652F;&#x6301;JavaScript&#x63D2;&#x4EF6;&#x5BF9;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x3002;</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/aliyunpan-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694956746</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="upload" Target="/home/app/data" Default="" Mode="rw" Description="&#x672C;&#x673A;&#x4E0A;&#x4F20;&#x76EE;&#x5F55;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/upload</Config>
+  <Config Name="ALIYUNPAN_REFRESH_TOKEN" Target="ALIYUNPAN_REFRESH_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">bc4bc9f894814fefa3c53e887a1580b1</Config>
+  <Config Name="ALIYUNPAN_PAN_DIR" Target="ALIYUNPAN_PAN_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/unraid/upload</Config>
+  <Config Name="ALIYUNPAN_SYNC_MODE" Target="ALIYUNPAN_SYNC_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">upload</Config>
+  <Config Name="&#x540C;&#x6B65;&#x65E5;&#x5FD7;" Target="ALIYUNPAN_SYNC_LOG" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x68C0;&#x6D4B;&#x5EF6;&#x8FDF;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;" Target="ALIYUNPAN_LOCAL_DELAY_TIME" Default="3600" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">60</Config>
+</Container>

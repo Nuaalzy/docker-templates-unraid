@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wechat-chatgpt</Name>
+  <Repository>holegots/wechat-chatgpt:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1670683656</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/app/config.yaml" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/wechat-chatgpt/config.yaml</Config>
+  <Config Name="http_proxy" Target="http_proxy" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.2:20172</Config>
+</Container>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>IYUUPlus</Name>
+  <Repository>iyuucn/iyuuplus</Repository>
+  <Registry>https://hub.docker.com/r/iyuucn/iyuuplus</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>IYUUAutoReseed&#x9879;&#x76EE;&#x7684;&#x5347;&#x7EA7;&#x7248;&#xFF0C;&#x5E38;&#x9A7B;&#x5185;&#x5B58;&#x8FD0;&#x884C;&#xFF1B;&#x96C6;&#x6210;webui&#x754C;&#x9762;&#x3001;&#x8F85;&#x79CD;&#x3001;&#x4E0B;&#x8F7D;&#x3001;&#x5B9A;&#x65F6;&#x8BBF;&#x95EE;URL&#x3001;&#x52A8;&#x6001;&#x57DF;&#x540D;ddns&#x7B49;&#x5E38;&#x7528;&#x529F;&#x80FD;&#xFF0C;&#x63D0;&#x4F9B;&#x5B8C;&#x5584;&#x7684;&#x63D2;&#x4EF6;&#x673A;&#x5236;&#x3002; </Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8787]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/iyuu-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>0</CPUset>
+  <DateInstalled>1697344273</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web port" Target="8787" Default="8787" Mode="tcp" Description="web&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="false" Mask="false">8787</Config>
+  <Config Name="db" Target="/IYUU/db" Default="/mnt/user/appdata/docker/IYUU/" Mode="rw" Description="&#x4F60;&#x60F3;&#x5728;&#x672C;&#x5730;&#x4FDD;&#x5B58;IYUU&#x914D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/IYUU/</Config>
+  <Config Name="BT_backup" Target="/BT_backup" Default="" Mode="rw" Description="qBittorrent&#x7684;BT_backup&#x6587;&#x4EF6;&#x5939;&#x5728;&#x5BBF;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qbit/data/BT_backup</Config>
+  <Config Name="torrents" Target="/torrents" Default="" Mode="rw" Description="transmission&#x7684;torrents&#x6587;&#x4EF6;&#x5939;&#x5728;&#x5BBF;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x8DEF;&#x5F84;,&#x53EF;&#x9009;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/transmission/config/torrents/</Config>
+</Container>

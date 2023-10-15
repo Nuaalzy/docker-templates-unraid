@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>frpc</Name>
+  <Repository>ryaning/frpc</Repository>
+  <Registry>https://hub.docker.com/r/ryaning/frpc</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>frp &#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x4E8E;&#x5185;&#x7F51;&#x7A7F;&#x900F;&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x7684;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x5E94;&#x7528;&#xFF0C;&#x652F;&#x6301; tcp, udp &#x534F;&#x8BAE;&#xFF0C;&#x4E3A; http &#x548C; https &#x5E94;&#x7528;&#x534F;&#x8BAE;&#x63D0;&#x4F9B;&#x4E86;&#x989D;&#x5916;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x4E14;&#x5C1D;&#x8BD5;&#x6027;&#x652F;&#x6301;&#x4E86;&#x70B9;&#x5BF9;&#x70B9;&#x7A7F;&#x900F;&#x3002;</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nuaalzy/docker-templates-unraid/master/icons/frp-icon.png</Icon>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1677983442</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="config" Target="/etc/frp/frpc.ini" Default="/mnt/user/appdata/docker/frp/frpc.ini" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docker/frp/frpc.ini</Config>
+</Container>

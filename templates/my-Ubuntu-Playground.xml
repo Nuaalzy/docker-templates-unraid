@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ubuntu-Playground</Name>
+  <Repository>ghcr.io/siwatinc/ubuntu-playground:latest</Repository>
+  <Registry>https://github.com/orgs/SiwatINC/packages/container/package/ubuntu-playground</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <Project>https://www.ubuntu.com/</Project>
+  <Overview>Ubuntu Playground (NO GUI) is a place where you can play with ubuntu command NOTE The data of the containter will be clear if you force update the container Click on the container icon then click console to access it</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/docker-template/ubuntuplayground.xml</TemplateURL>
+  <Icon>https://assets.ubuntu.com/v1/c5cb0f8e-picto-ubuntu.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1670896502</DateInstalled>
+  <DonateText>If you like it, then consider buying me a soda as I don&amp;amp;#39;t like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <Requires/>
+  <Config Name="APT Packages" Target="packages" Default="mc nano sudo" Mode="" Description="The List of aptitude packages you wish to install (Seperated by space)" Type="Variable" Display="always" Required="true" Mask="false">mc nano sudo</Config>
+  <Config Name="&#x8DEF;&#x5F84;" Target="/others" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/W3P314JX/others/</Config>
+  <Config Name="Home Directory" Target="/home/root" Default="/mnt/user/appdata/ubuntudata" Mode="rw" Description="This is where playground will store you user's home directory" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ubuntudata</Config>
+</Container>
